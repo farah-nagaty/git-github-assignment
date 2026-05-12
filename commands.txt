@@ -1,0 +1,108 @@
+# Git & GitHub Assignment Commands
+
+# Create project folder
+mkdir git-github-assignment
+
+# Enter project folder
+cd git-github-assignment
+
+# Initialize Git repository
+git init
+
+# Create README file
+touch README.md
+
+# Open README file
+notepad README.md
+
+# Check repository status
+git status
+
+# Add files to staging area
+git add .
+
+# First commit
+git commit -m "Initial commit"
+
+# Configure Git username
+git config --global user.name "Farah Nagaty"
+
+# Configure Git email
+git config --global user.email "your-email@example.com"
+
+# Show commit history
+git log
+
+# Connect local repository to GitHub
+git remote add origin https://github.com/farah-nagaty/git-github-assignment.git
+
+# Rename branch to main
+git branch -M main
+
+# Push project to GitHub
+git push -u origin main
+
+# Create feature/login branch
+git checkout -b feature/login
+
+# Create login file
+touch login.txt
+
+# Open login file
+notepad login.txt
+
+# Add and commit login feature
+git add .
+git commit -m "Add login feature"
+
+# Switch to main branch
+git checkout main
+
+# Merge feature/login branch
+git merge feature/login
+
+# Push updates
+git push
+
+# Create feature-a branch
+git checkout -b feature-a
+
+# Edit README file
+notepad README.md
+
+# Commit feature-a changes
+git add .
+git commit -m "Edit README in feature-a"
+
+# Switch back to main
+git checkout main
+
+# Create feature-b branch
+git checkout -b feature-b
+
+# Edit README file again
+notepad README.md
+
+# Commit feature-b changes
+git add .
+git commit -m "Edit README in feature-b"
+
+# Switch to main branch
+git checkout main
+
+# Merge feature-a
+git merge feature-a
+
+# Merge feature-b (causes conflict)
+git merge feature-b
+
+# Resolve merge conflict manually
+
+# Add resolved file
+git add README.md
+
+# Commit resolved conflict
+git commit -m "Resolve merge conflict"
+
+# Final push
+git push
